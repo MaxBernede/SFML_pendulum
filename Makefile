@@ -10,7 +10,9 @@ CXXFLAGS := -std=c++11 -Wall $(shell pkg-config --cflags sfml-all)
 TARGET := exe
 
 # Source files
-SOURCES := main.cpp
+SOURCES :=	main.cpp \
+			Cube.cpp \
+			FPSCounter.cpp\
 
 # Object files
 OBJECTS := $(SOURCES:.cpp=.o)
